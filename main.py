@@ -62,7 +62,7 @@ async def trigger_pipeline_from_uploads(
             analysis = validate_analysis(raw_analysis)
 
             overall_score = analysis.get("OverallMatchPercentage", 0)
-            shortlisted_flag = "yes" if overall_score > 40 else "no"
+            shortlisted_flag = "yes" if overall_score > 60 else "no"
 
             record = {
                 "name": name,

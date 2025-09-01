@@ -1,3 +1,5 @@
+from bson import ObjectId
+
 # ---------------- Helper ----------------
 def serialize_mongo(record):
     if isinstance(record, list):
